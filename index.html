@@ -1,22 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
-</head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;h1&gt;Hello World!!!!!!&lt;/h1&gt;</p>
-<p class="p1">&lt;p&gt;I hope this works&lt;/p&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-</body>
+    <head>
+        <title>Team WHB Donation Website</title>
+        <link href="https://fonts.cdnfonts.com/css/telegraf?styles=168098,168099,168100" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">        
+    </head>
+    <body>
+        <div class="oric-pics">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="oric-1.jpeg" style="width:50%; height:50%; padding-top: 4px; margin-left: 25%;">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="oric-2.jpeg" style="width:50%; height:50%; padding-top: 4px; margin-left: 25%;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="IMG_5124.jpg" style="width:50%; height:50%; padding-top: 4px; margin-left: 25%;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="IMG_3057.jpg" style="width:50%; height:50%; padding-top: 4px; margin-left: 25%;">
+                </div>
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+  
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";
+                  }
+                 for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+       </div>
+
+        <div id="rewards-bar">
+
+        </div>
+
+        <div class="side-by-side">
+            <iframe class="qgiv-embed" id="qgiv-embed-8190275" src="https://secure.qgiv.com/event/dogfestlongisland/widget/8190275/?etype=team&entity=959087" frameborder="0" allowtransparency="true" scrolling="no" style="width: 331.328px; height: 400px;"></iframe>
+
+            <div class="line"></div>
+    
+            <div id="donation-explanation">
+                <h2>What Is This Fundraiser?</h2>
+                <p>This fundraiser is to raise money for Canine Companions. Canine Companions is a non-profit organization which provides service and facility dogs to schools and people with disabilities at no charge. Canine Companions relies only on donations.</p>
+                <h2>Why Should You Donate?</h2>
+                <p>Canine Companions donated Oric to the school for no cost at all. We would like to give back to Canine Companions to support them and thank them for their generous donation. You can also win prizes depending on how much your sponspors donate.</p>
+                <h2>How to Raise Funds</h2>
+                <p>Now that the warm weather is here, we want you to get outside and walk like Oric - in and out of school! Starting June 1st we will have opportunities in school for students to walk with Oric. To donate, find sponsors to help reach your donation goal (amounts listed on the donation site). Let's get moving! </p>
+                <hr>
+                <a target="_blank" rel="noopener noreferrer" href="https://secure.qgiv.com/event/dogfestlongisland/team/959087/"><button class="donation-button">Donate Now</button></a>
+            </div>
+        </div>
+        
+    </body>
 </html>

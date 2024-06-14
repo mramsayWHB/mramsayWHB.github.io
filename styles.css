@@ -1,0 +1,163 @@
+* {box-sizing:border-box}
+
+.oric-pics {
+    border: 1px solid black;
+    background-color: lightskyblue;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(93, 93, 93, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Telegraf', sans-serif;                                            
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: 'Telegraf', sans-serif;  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.qgiv-embed {
+    width: 45%;
+    height: min-content;
+    margin: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 5px;
+}
+
+.progress-bar {
+    background-image: linear-gradient(rgb(249, 148, 65), orange);
+    height: 20px;
+}
+
+.side-by-side {
+    display: flex;
+    border: 1px solid black;
+}
+
+h1, h2, h3, p {
+    font-family: 'Telegraf', sans-serif;  
+    padding-right: 5%;
+}
+
+.line {
+    width: 2px;
+    background-color: black;
+    margin-right: 5%;
+}
+
+body {
+    border: 1px solid black;
+}
+
+.progress {
+    border: 4px solid  black;
+    margin: 5px;
+}
+
+.donation-button {
+    background-color: orange;
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    font-family: 'TELEGRAF';
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.donation-button:hover {
+    background-color: rgb(249, 148, 65);
+    transition: background-color 0.6s ease;
+}
+
+.donation-explanation {
+    width: 45%;
+}
+
+.goal-label, .raised-label {
+    text-align: center;
+}
+
+hr {
+    margin-right: 5%;
+}
